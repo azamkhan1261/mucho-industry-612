@@ -8,6 +8,7 @@
     <title>SHOP.COM-Online shopping</title>
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/ordercart.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -15,8 +16,8 @@
 </head>
 
 <body>
-    <!-- <a href="/html/navbar.html"></a>
-    <a href="/html/index.html"></a> -->
+
+    <!-- <a href="/html/index.html"></a> -->
     <div class="navbar">
         <header class="headernav">
             <img src="https://img.shop.com/Image/resources/logos/shop-logo-us-gold.svg" alt="shop.com logo"
@@ -55,13 +56,13 @@
             </div>
             <div>
                 <ul class="navlist">
-                    <li>Exclusive Brands</li>
-                    <li>Stores</li>
-                    <li>Deals</li>
-                    <li>SHOP Travels</li>
-                    <li>Departments</li>
-                    <li>ShopBuddy</li>
-                    <li>SHOP Local</li>
+                    <li><a href="/html/ordercart.html">Exclusive Brands</a></li>
+                    <li><a href="/html/ordercart.html">Stores</a></li>
+                    <li><a href="/html/ordercart.html">Deals</a></li>
+                    <li><a href="/html/ordercart.html">SHOP Travels</a></li>
+                    <li><a href="/html/ordercart.html">Departments</a></li>
+                    <li><a href="/html/ordercart.html">ShopBuddy</a></li>
+                    <li><a href="/html/ordercart.html">SHOP Local</a></li>
                 </ul>
             </div>
             <div class="nav-rightimg">
@@ -70,13 +71,25 @@
 
                 <div class="sign-order-cart">
                     <i class="fa-solid fa-circle-user"></i>
-                    <p>Sign in</p>
+                    <p class="navsign-in">Sign in</p>
                     <i class="fa-solid fa-arrow-rotate-left"></i>
-                    <p>Orders</p>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <p>Cart</p>
+                    <a href="/html/ordercart.html" class="navgo-to-shop">Go to shop</a>
+                    <div class="cart-box">
+                        <div class="cart-icon">
+                            <i class="fas fa-cart-arrow-down fa-2x"></i>
+                        </div>
+                        <div class="whole-cart-window hide">
+                            <h2>Shopping cart</h2>
+                            <div class="cart-wrapper">
+                            </div>
+                            <div class="subtotal">Subtotal: $0.00</div>
+
+                            <div class="view-cart">View Cart/Checkout</div>
+                            <div class="checkout">Contonue Shopping</div>
+                        </div>
+                    </div>
+                    <p class="cart-name">Cart</p>
                 </div>
-            </div>
 
         </header>
     </div>
@@ -89,27 +102,27 @@
     </div>
     <nav class="sidebar">
         <div class="text">
-           <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="shop.com logo"> SHOP.COM
+            <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="shop.com logo"> SHOP.COM
         </div>
         <ul>
             <li class="active"><a href="#">Categories</a></li>
-            <li><a href="#">Features Brand: Shark|Ninja</a></li>
-            <li><a href="#">Back to School</a></li>
-            <li><a href="#">Gift Center</a></li>
-            <li><a href="#">SHOP.COM Home Warranties</a></li>
-            <li><a href="#">Onecart Exclusive Deals</a></li>
-            <li><a href="#">Newly Launched Products</a></li>
+            <li><a href="/html/ordercart.html">Features Brand: Shark|Ninja</a></li>
+            <li><a href="/html/ordercart.html">Back to School</a></li>
+            <li><a href="/html/ordercart.html">Gift Center</a></li>
+            <li><a href="/html/ordercart.html">SHOP.COM Home Warranties</a></li>
+            <li><a href="/html/ordercart.html">Onecart Exclusive Deals</a></li>
+            <li><a href="/html/ordercart.html">Newly Launched Products</a></li>
             <li>
                 <a href="#" class="serv-btn">Clothes
                     <span class="fas fa-caret-down second"></span>
                 </a>
                 <ul class="serv-show">
-                    <li><a href="#">Men's Clothing</a></li>
-                    <li><a href="#">Women's Clothing</a></li>
-                    <li><a href="#">Boy's Clothing</a></li>
-                    <li><a href="#">Girls Clothing</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Baby & Toddler Clothing</a></li>
+                    <li><a href="/html/ordercart.html">Men's Clothing</a></li>
+                    <li><a href="/html/ordercart.html">Women's Clothing</a></li>
+                    <li><a href="/html/ordercart.html">Boy's Clothing</a></li>
+                    <li><a href="/html/ordercart.html">Girls Clothing</a></li>
+                    <li><a href="/html/ordercart.html">Accessories</a></li>
+                    <li><a href="/html/ordercart.html">Baby & Toddler Clothing</a></li>
                 </ul>
             </li>
             <li>
@@ -117,31 +130,36 @@
                     <span class="fas fa-caret-down first"></span>
                 </a>
                 <ul class="feat-show">
-                    <li><a href="#">Men's Shoes</a></li>
-                    <li><a href="#">Women's Shoes</a></li>
-                    <li><a href="#">Boy's Shoes</a></li>
-                    <li><a href="#">Girl's Shoes</a></li>
-                    <li><a href="#">Kid's & Toddler Shoes</a></li>
-                    <li><a href="#">Accessories</a></li>
+                    <li><a href="/html/ordercart.html">Men's Shoes</a></li>
+                    <li><a href="/html/ordercart.html">Women's Shoes</a></li>
+                    <li><a href="/html/ordercart.html">Boy's Shoes</a></li>
+                    <li><a href="/html/ordercart.html">Girl's Shoes</a></li>
+                    <li><a href="/html/ordercart.html">Kid's & Toddler Shoes</a></li>
+                    <li><a href="/html/ordercart.html">Accessories</a></li>
                 </ul>
             </li>
-           
-            <li><a href="#">Beauty</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Electronics</a></li>
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">Food </a></li>
-            <li><a href="#">Home</a></li>
+
+            <li><a href="/html/ordercart.html">Beauty</a></li>
+            <li><a href="/html/ordercart.html">Home</a></li>
+            <li><a href="/html/ordercart.html">Electronics</a></li>
+            <li><a href="/html/ordercart.html">Kids</a></li>
+            <li><a href="/html/ordercart.html">Food </a></li>
+            <li><a href="/html/ordercart.html">Home</a></li>
         </ul>
     </nav>
-   
-    
 </body>
 <script src="/script/navbar.js"></script>
 <script src="/script/index.js"></script>
+<script src="/script/ordercart.js"></script>
 <script src="https://unpkg.com/htmlincludejs"></script>
 <include src="/html/index.html"></include>
-</html>
-<!-- <script>
+<!-- <include src="/html/ordercart.html"></include> -->
 
-</script> --> 
+
+</html>
+<script>
+
+    function myfunction() {
+        window.location = "ordercart.html"
+    }
+</script>

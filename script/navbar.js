@@ -27,3 +27,12 @@ $('.serv-btn').click(function () {
 $('nav ul li').click(function () {
     $(this).addClass("active").siblings().removeClass("active");
 });
+
+
+function myfunction(){
+    window.location.href="ordercart.html"
+}
+// document.querySelector("button").addEventListener("click", myfunction()){
+//     console.log(window.location.href);
+//     window.location.href = "ordercart.html";
+// };
