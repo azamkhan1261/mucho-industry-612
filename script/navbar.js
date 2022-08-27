@@ -29,9 +29,9 @@ $('nav ul li').click(function () {
 });
 
 
-function myfunction(){
-    window.location.href="ordercart.html"
-}
+// function myfunction(){
+//     window.location.href="ordercart.html"
+// }
 // document.querySelector("button").addEventListener("click", myfunction()){
 //     console.log(window.location.href);
 //     window.location.href = "ordercart.html";
