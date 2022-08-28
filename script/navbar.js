@@ -36,3 +36,24 @@ $('nav ul li').click(function () {
 //     console.log(window.location.href);
 //     window.location.href = "ordercart.html";
 // };
+
+
+const hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", function () {
+    this.classList.toggle('close');
+});
+let add = document.querySelector("#add"),
+    remove = document.querySelector("#remove");
+
+add.addEventListener("click", event => {
+    if(event.target.previousElementSibling.nodeName === "H1" ||
+        event.target.previousElementSibling.nodeName === "P"){
+        event.target.previousElementSibling.insertAdjacentHTML('afterend', para);
+    }
+});
+
+remove.addEventListener("click", event => {
+    if(event.target.previousElementSibling.previousElementSibling.nodeName === "P"){
+        event.target.previousElementSibling.previousElementSibling.remove();
+    }   
+});

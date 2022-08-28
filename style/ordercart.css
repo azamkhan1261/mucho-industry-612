@@ -197,3 +197,21 @@ margin-top: 35%;
     margin-bottom: -40px;
     font-size: 30px;
 }
+
+@media all and (min-width:470px) and (max-width:870px) {
+    .card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .cart-icon{
+        text-align: right;
+        margin-right: 8px;
+        margin-left: 1px;
+        margin-top: 32px;
+        position: fixed;
+        /* margin: -115px 280px; */
+        
+    }
+    
+}
